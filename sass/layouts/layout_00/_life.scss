@@ -1,0 +1,25 @@
+.life .grid-photo__item {
+    &:nth-of-type(1) {
+        background-image: url('../img/life-1.png');
+    }
+
+    &:nth-of-type(2) {
+        background-image: url('../img/life-2.png');
+    }
+
+    &:nth-of-type(3) {
+        background-image: url('../img/life-3.png');
+    }
+
+    &:nth-of-type(4) {
+        background-image: url('../img/life-4.png');
+    }
+
+    &:nth-of-type(5) {
+        background-image: url('../img/life-5.png');
+    }
+
+    &:nth-of-type(6) {
+        background-image: url('../img/life-6.png');
+    }
+}

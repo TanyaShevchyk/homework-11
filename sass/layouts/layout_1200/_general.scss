@@ -1,0 +1,11 @@
+.container {
+    padding: 0;
+}
+
+main {
+    padding: 120px 0;
+
+    & section:not(:last-child) {
+        margin-bottom: 120px;
+    }
+}

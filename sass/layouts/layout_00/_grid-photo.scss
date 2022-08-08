@@ -1,0 +1,93 @@
+.grid-photo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 370px);
+    gap: 30px;
+
+
+    &__item {
+        position: relative;
+        grid-column: span 1;
+        grid-row: span 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        background-image: url('../img/placeholder.png');
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 20px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
+            opacity: 1;
+            transition: opacity .3s ease;
+        }
+
+        &:hover::after {
+            opacity: 0;
+        }
+    }
+}
+
+.grid-photo__item-top {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & button {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(224, 224, 224, 0.5);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 0;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: #E0E0E0;
+        }
+
+        & .icon {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+.grid-photo__item-bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 20px;
+        color: $darkWhiteColor;
+    }
+
+    & h3 {
+        font-size: 20px;
+        color: $whiteColor;
+        font-family: 'Roboto';
+        font-weight: 500;
+    }
+}

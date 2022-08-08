@@ -1,0 +1,15 @@
+.grid-photo {
+    grid-template-columns: 3fr;
+    grid-template-rows: repeat (5, 370px);
+}
+
+.grid-photo__item-bottom {
+
+    & h3 {
+        font-size: 20px;
+    }
+
+    & span {
+        font-size: 20px;
+    }
+}

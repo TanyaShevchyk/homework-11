@@ -1,0 +1,31 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+main {
+    padding: 60px 0;
+
+    & section:not(:last-child) {
+        margin-bottom: 60px;
+    }
+}
+
+
+
+h2 {
+    font-family: "Delius Unicase";
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: $blackColor;
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+}

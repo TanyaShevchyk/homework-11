@@ -1,0 +1,26 @@
+.architectural .grid-photo__item {
+    &:nth-of-type(1) {
+        background-image: url('../img/architectural-1.png');
+    }
+
+    &:nth-of-type(2) {
+        background-image: url('../img/architectural-2.png');
+    }
+
+    &:nth-of-type(3) {
+        background-image: url('../img/architectural-3.png');
+    }
+
+    &:nth-of-type(4) {
+        background-image: url('../img/architectural-4.png');
+    }
+
+    &:nth-of-type(5) {
+        background-image: url('../img/architectural-5.png');
+    }
+
+    &:nth-of-type(6) {
+        background-image: url('../img/architectural-6.png');
+    }
+
+}

@@ -1,0 +1,9 @@
+.architectural .grid-photo {
+    grid-template-columns: repeat(3, 1fr);
+
+    &__item {
+        &:nth-of-type(2) &:nth-of-type(3) &:nth-of-type(6) {
+            grid-column: span 2;
+        }
+    }
+}
